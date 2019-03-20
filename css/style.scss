@@ -1,0 +1,318 @@
+@font-face {
+  font-family: 'QuicksandBold';
+  src: url('../fonts/QuicksandBold.eot');
+  src: url('../fonts/QuicksandBold.eot') format('embedded-opentype'),
+  url('../fonts/QuicksandBold.woff2') format('woff2'),
+  url('../fonts/QuicksandBold.woff') format('woff'),
+  url('../fonts/QuicksandBold.ttf') format('truetype'),
+  url('../fonts/QuicksandBold.svg#QuicksandBold') format('svg');
+}
+
+@font-face {
+  font-family: 'SourceSansProBold';
+  src: url('../fonts/SourceSansProBold.eot');
+  src: url('../fonts/SourceSansProBold.eot') format('embedded-opentype'),
+  url('../fonts/SourceSansProBold.woff2') format('woff2'),
+  url('../fonts/SourceSansProBold.woff') format('woff'),
+  url('../fonts/SourceSansProBold.ttf') format('truetype'),
+  url('../fonts/SourceSansProBold.svg#SourceSansProBold') format('svg');
+}
+
+@font-face {
+  font-family: 'SourceSansProSemiBold';
+  src: url('../fonts/SourceSansProSemiBold.eot');
+  src: url('../fonts/SourceSansProSemiBold.eot') format('embedded-opentype'),
+  url('../fonts/SourceSansProSemiBold.woff2') format('woff2'),
+  url('../fonts/SourceSansProSemiBold.woff') format('woff'),
+  url('../fonts/SourceSansProSemiBold.ttf') format('truetype'),
+  url('../fonts/SourceSansProSemiBold.svg#SourceSansProSemiBold') format('svg');
+}
+@font-face {
+  font-family: 'SourceSansProRegular';
+  src: url('../fonts/SourceSansProRegular.eot');
+  src: url('../fonts/SourceSansProRegular.eot') format('embedded-opentype'),
+  url('../fonts/SourceSansProRegular.woff2') format('woff2'),
+  url('../fonts/SourceSansProRegular.woff') format('woff'),
+  url('../fonts/SourceSansProRegular.ttf') format('truetype'),
+  url('../fonts/SourceSansProRegular.svg#SourceSansProRegular') format('svg');
+}
+
+
+@mixin max-screen($res){
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin min-screen($res){
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+
+body{
+  --color-text-fff: #fff;
+  --color-blue: #008ed6;
+  --color-text-000: #000;
+  transition: 0.3s;
+}
+
+a{
+  color: var(--color-text-fff);
+  &:hover{
+    text-decoration: none;
+    color: var(--color-text-fff);
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+.color_theme {
+  background: rgba(5, 16, 31, 0.3);
+  --color-text-fff: #1a6cb4;
+  --color-blue: #b12d9f;
+  --color-text-000: #46a8e4;
+  transition: 0.3s;
+  .top_head{
+    background: url("../images/head_bg_rotate.png") #100e15 no-repeat center;
+    background-size: cover;
+    transition: 0.5s;
+  }
+  .top_left_block{
+    .links{
+      a{
+        &:hover{
+          color: white!important;
+        }
+      }
+    }
+  }
+  .top_right_block{
+    img{
+      transform: rotateY(180deg);
+      transition: 0.5s;
+    }
+  }
+}
+
+.top_head{
+  background: url("../images/head_bg.png") #100e15 no-repeat center ;
+  background-size: cover;
+  transition: 0.5s;
+  .navbar{
+    .container{
+      .navbar-collapse{
+        @include max-screen(767px){
+          width: 100%;
+          z-index: 2;
+          position: absolute;
+          background: rgba(16, 14, 21, 0.9);
+          outline: none;
+        }
+      }
+      .navbar-header{
+        position: relative;
+        margin-top: 42px;
+        @include max-screen(992px){
+          margin-top: 20px;
+        }
+        button{
+          color: var(--color-text-fff);
+          border-color: var(--color-text-fff);
+          @include max-screen(767px){
+            position: absolute;
+            top: 0;
+            left: 15px;
+            margin: 0;
+          }
+        }
+        .navbar-brand{
+          font: 24px/24px 'QuicksandBold';
+          outline: none;
+          padding-top: 0;
+          text-transform: uppercase;
+          transition: 0.6s;
+          @include max-screen(767px){
+            width: 100%;
+            text-align: right;
+          }
+          &:hover{
+            text-shadow: 3px 3px 3px var(--color-blue);
+            transition: 0.6s;
+
+          }
+        }
+      }
+      ul{
+        margin-top: 42px;
+        padding: 0;
+        @include max-screen(992px){
+          margin-top: 20px;
+        }
+        li{
+          a{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 16px;
+            padding: 0;
+            position: relative;
+            margin-left: 22px;
+            transition: 0.5s;
+            @include max-screen(992px){
+              font-size: 14px;
+            }
+            @include max-screen(767px){
+              padding-bottom: 10px;
+            }
+            &:after{
+              content: "";
+              width: 20px;
+              height: 2px;
+              background-color: var(--color-blue);
+              display: block;
+              position: absolute;
+              left: 22px;
+              bottom: -13px;
+              opacity: 0;
+              transition: 0.5s;
+              @include max-screen(767px){
+                bottom: 3px;
+              }
+            }
+            &:before{
+              content: "";
+              width: 20px;
+              height: 2px;
+              background-color: var(--color-blue);
+              display: block;
+              position: absolute;
+              left: 0;
+              bottom: -13px;
+              opacity: 0;
+              transition: 0.5s;
+              @include max-screen(767px){
+                bottom: 3px;
+              }
+            }
+            &:hover{
+              background: transparent;
+              &:after{
+                opacity: 1;
+                transition: 0.5s;
+              }
+              &:before{
+                opacity: 1;
+                transition: 0.3s;
+              }
+            }
+            &:focus{
+              background: transparent;
+              transform: none;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container{
+    .row{
+      .top_left_block{
+        @include min-screen(1200px){
+          margin: 50px 0 100px;
+          padding-right: 80px;
+        }
+        @include max-screen(992px){
+          margin-bottom:30px;
+        }
+        h4{
+          font: 14px/14px 'SourceSansProBold';
+          color: var(--color-blue);
+          text-transform: uppercase;
+          margin: 0;
+          transition: 0.5s;
+          @include max-screen(992px){
+            font-size: 12px;
+            text-align: center;
+          }
+        }
+        h1{
+          font: 48px/48px 'SourceSansProSemiBold';
+          color: var(--color-text-fff);
+          margin-bottom: 28px;
+          transition: 0.5s;
+          @include max-screen(992px){
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 20px;
+          }
+          @include max-screen(767px){
+            margin: 10px auto 20px;
+            text-align: center;
+          }
+          @include max-screen(576px){
+            font-size: 27px;
+            line-height: 35px;
+          }
+        }
+        p{
+          font: 18px/25px'SourceSansProRegular';
+          color: #999999;
+          @include max-screen(992px){
+            font-size: 16px;
+            line-height: 21px;
+            text-align: justify;
+          }
+          @include max-screen(576px){
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+        .links{
+          margin-top: 60px;
+          @include max-screen(992px){
+            margin-top: 20px;
+            text-align: center;
+          }
+          a{
+            display: inline-block;
+            font: 14px/48px 'SourceSansProBold';
+            text-align: center;
+            color: var(--color-text-fff);
+            text-transform: uppercase;
+            border: solid 1px #454549;
+            border-radius: 3px;
+            width: 160px;
+            transition: 0.3s;
+            @include max-screen(992px){
+              width: 120px;
+              height: 35px;
+              line-height: 33px;
+              font-size: 12px;
+            }
+            &:last-child{
+              margin-left: 20px;
+            }
+            &:hover{
+              transition: 0.3s;
+              border: solid 1px transparent;
+              background-color: var(--color-blue);
+            }
+          }
+        }
+      }
+      .top_right_block{
+        img{
+          width: 100%;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
