@@ -105,7 +105,8 @@ input {
         margin-top: 20px; } }
     .top_head .navbar .container .navbar-header button {
       color: var(--color-text-fff);
-      border-color: var(--color-text-fff); }
+      border-color: var(--color-text-fff);
+      padding: 5px 10px; }
       @media screen and (max-width: 767px) {
         .top_head .navbar .container .navbar-header button {
           position: absolute;

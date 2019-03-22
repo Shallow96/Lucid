@@ -176,6 +176,7 @@ input{
         button{
           color: var(--color-text-fff);
           border-color: var(--color-text-fff);
+          padding: 5px 10px;
           @include max-screen(767px){
             position: absolute;
             top: 0;
