@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a9dd174-6fc3-424f-ba52-93cc262a7e71" name="Default Changelist" comment="" />
+    <list default="true" id="4a9dd174-6fc3-424f-ba52-93cc262a7e71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuicksandBold.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SourceSansProBold.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SourceSansProRegular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conformity-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,107 +22,73 @@
     <session id="614720098">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="9" />
-          <entry key="html" value="10" />
-          <entry key="js" value="4" />
-          <entry key="scss" value="5" />
+          <entry key="css" value="12" />
+          <entry key="html" value="13" />
+          <entry key="js" value="6" />
+          <entry key="scss" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="9" />
-          <entry key="HTML" value="10" />
-          <entry key="JavaScript" value="4" />
-          <entry key="SCSS" value="5" />
+          <entry key="CSS" value="12" />
+          <entry key="HTML" value="13" />
+          <entry key="JavaScript" value="6" />
+          <entry key="SCSS" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="17" />
-          <entry key="html" value="487" />
+          <entry key="css" value="23" />
+          <entry key="html" value="1594" />
           <entry key="js" value="110" />
-          <entry key="scss" value="2200" />
+          <entry key="scss" value="3988" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="17" />
-          <entry key="HTML" value="487" />
+          <entry key="CSS" value="23" />
+          <entry key="HTML" value="1594" />
           <entry key="JavaScript" value="110" />
-          <entry key="SCSS" value="2200" />
+          <entry key="SCSS" value="3988" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="51" column="74" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
+            <state relative-caret-position="271">
+              <caret line="501" column="71" selection-start-line="501" selection-start-column="71" selection-end-line="501" selection-end-column="71" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#select#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+            <state relative-caret-position="271">
+              <caret line="384" column="50" lean-forward="true" selection-start-line="384" selection-start-column="50" selection-end-line="384" selection-end-column="50" />
               <folding>
-                <element signature="e#2040#2193#0" />
-                <element signature="e#2083#2149#0" />
-                <element signature="e#2159#2191#0" />
-                <element signature="e#2277#2287#0" />
-                <element signature="e#2480#2490#0" />
-                <element signature="e#2418#2473#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/LemonSchool/home/Creativa/css/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
-              <folding>
-                <element signature="e#3864#4760#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/LemonSchool/home/Luis Oenrique/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/LemonSchool/home/Luis Oenrique/css/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-              <folding>
-                <element signature="e#2098#2527#0" />
-                <element signature="e#2540#3434#0" />
-                <element signature="e#3449#3828#0" />
-                <element signature="e#3834#4033#0" />
-                <element signature="e#4041#4929#0" />
+                <element signature="e#3914#9436#0" />
+                <element signature="e#12020#13023#0" />
               </folding>
             </state>
           </provider>
@@ -123,13 +99,28 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>col</find>
-      <find>active</find>
       <find>focus</find>
       <find>@in</find>
       <find>auto</find>
       <find>off</find>
       <find>42</find>
+      <find>type</find>
+      <find>uk</find>
+      <find>button</find>
+      <find>exampleInputEmail1</find>
+      <find>sele</find>
+      <find>saveNext</find>
+      <find>confi</find>
+      <find>non</find>
+      <find>span</find>
+      <find>activ</find>
+      <find>active</find>
+      <find>people</find>
+      <find>modal_bg</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -144,8 +135,11 @@
         <option value="$PROJECT_DIR$/QuicksandBold.css" />
         <option value="D:/LemonSchool/home/Luis Oenrique/index.html" />
         <option value="D:/LemonSchool/home/Luis Oenrique/css/style.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/MontserratLight.css" />
+        <option value="$PROJECT_DIR$/MontserratMedium.css" />
         <option value="$PROJECT_DIR$/css/style.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -161,11 +155,13 @@
     <option name="width" value="1235" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,13 +172,23 @@
             <path>
               <item name="Lucid" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lucid" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lucid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lucid" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="Lucid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lucid" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,18 +223,21 @@
       <workItem from="1553035853798" duration="1107000" />
       <workItem from="1553038765713" duration="759000" />
       <workItem from="1553072372370" duration="9054000" />
-      <workItem from="1553081603569" duration="21233000" />
+      <workItem from="1553081603569" duration="21833000" />
+      <workItem from="1553200174569" duration="10409000" />
+      <workItem from="1553246482745" duration="11757000" />
+      <workItem from="1553261598919" duration="19243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41831000" />
+    <option name="totallyTimeSpent" value="83840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17481662" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16381419" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,45 +295,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSansProSemiBold.css" />
-    <entry file="file://$PROJECT_DIR$/SourceSansProRegular.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="17" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSansProBold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="17" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuicksandBold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="17" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Temp/Rar$DIa0.876/conformity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1220">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Temp/Rar$DIa0.016/conformity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSansProRegular.css" />
+    <entry file="file://$PROJECT_DIR$/SourceSansProBold.css" />
+    <entry file="file://$PROJECT_DIR$/QuicksandBold.css" />
+    <entry file="file://C:/Temp/Rar$DIa0.876/conformity.js" />
+    <entry file="file://C:/Temp/Rar$DIa0.016/conformity.js" />
     <entry file="file://D:/LemonSchool/home/Creativa/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -342,20 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/LemonSchool/home/Luis Oenrique/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding>
-            <element signature="e#2098#2527#0" />
-            <element signature="e#2540#3434#0" />
-            <element signature="e#3449#3828#0" />
-            <element signature="e#3834#4033#0" />
-            <element signature="e#4041#4929#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/LemonSchool/home/Luis Oenrique/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -363,34 +324,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/LemonSchool/home/Luis Oenrique/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/LemonSchool/home/Creativa/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lucid-master/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1096">
+          <caret line="412" column="1" lean-forward="true" selection-start-line="317" selection-end-line="412" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lucid-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="106" column="21" selection-start-line="106" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2148" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MontserratLight.css" />
+    <entry file="file://$PROJECT_DIR$/MontserratMedium.css" />
+    <entry file="file://D:/LemonSchool/Rest/Lesson5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-2.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
           <folding>
-            <element signature="e#3864#4760#0" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="384" column="50" lean-forward="true" selection-start-line="384" selection-start-column="50" selection-end-line="384" selection-end-column="50" />
+          <folding>
+            <element signature="e#3914#9436#0" />
+            <element signature="e#12020#13023#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="51" column="74" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+        <state relative-caret-position="271">
+          <caret line="501" column="71" selection-start-line="501" selection-start-column="71" selection-end-line="501" selection-end-column="71" />
           <folding>
-            <element signature="e#2040#2193#0" />
-            <element signature="e#2083#2149#0" />
-            <element signature="e#2159#2191#0" />
-            <element signature="e#2277#2287#0" />
-            <element signature="e#2480#2490#0" />
-            <element signature="e#2418#2473#0" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

@@ -14,6 +14,14 @@
   font-family: 'SourceSansProRegular';
   src: url("../fonts/SourceSansProRegular.eot");
   src: url("../fonts/SourceSansProRegular.eot") format("embedded-opentype"), url("../fonts/SourceSansProRegular.woff2") format("woff2"), url("../fonts/SourceSansProRegular.woff") format("woff"), url("../fonts/SourceSansProRegular.ttf") format("truetype"), url("../fonts/SourceSansProRegular.svg#SourceSansProRegular") format("svg"); }
+@font-face {
+  font-family: 'MontserratLight';
+  src: url("../fonts/MontserratLight.eot");
+  src: url("../fonts/MontserratLight.eot") format("embedded-opentype"), url("../fonts/MontserratLight.woff2") format("woff2"), url("../fonts/MontserratLight.woff") format("woff"), url("../fonts/MontserratLight.ttf") format("truetype"), url("../fonts/MontserratLight.svg#MontserratLight") format("svg"); }
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url("../fonts/MontserratMedium.eot");
+  src: url("../fonts/MontserratMedium.eot") format("embedded-opentype"), url("../fonts/MontserratMedium.woff2") format("woff2"), url("../fonts/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium.ttf") format("truetype"), url("../fonts/MontserratMedium.svg#MontserratMedium") format("svg"); }
 .container {
   max-width: 1200px;
   width: 100%; }
@@ -22,6 +30,9 @@ body {
   --color-text-fff: #fff;
   --color-blue: #008ed6;
   --color-text-000: #000;
+  --color-btn: #e7cfa6;
+  --modal-body-bg: #efebe5;
+  --color-modal_rt_bg: #fff;
   transition: 0.3s; }
 
 a {
@@ -32,11 +43,30 @@ a {
   a:focus {
     text-decoration: none; }
 
+.modal {
+  padding: 0 !important; }
+
+.form-control {
+  border: none;
+  border-radius: 0; }
+
+.btn-default {
+  text-shadow: none; }
+
+input {
+  height: 31px !important; }
+  @media screen and (max-width: 576px) {
+    input {
+      font-size: 12px !important; } }
+
 .color_theme {
   background: rgba(5, 16, 31, 0.3);
   --color-text-fff: #1a6cb4;
   --color-blue: #b12d9f;
   --color-text-000: #46a8e4;
+  --color-btn: #B12D9F;
+  --modal-body-bg: radial-gradient(ellipse at center, rgba(62,0,128,1) 0%, rgba(0,0,0,1) 100%);
+  --color-modal_rt_bg: transparent;
   transition: 0.3s; }
   .color_theme .top_head {
     background: url("../images/head_bg_rotate.png") #100e15 no-repeat center;
@@ -47,6 +77,14 @@ a {
   .color_theme .top_right_block img {
     transform: rotateY(180deg);
     transition: 0.5s; }
+  .color_theme input {
+    background-color: #244461 !important;
+    color: white; }
+  .color_theme select {
+    background-color: #244461;
+    color: white; }
+  .color_theme button {
+    color: white; }
 
 .top_head {
   background: url("../images/head_bg.png") #100e15 no-repeat center;
@@ -224,5 +262,283 @@ a {
   .top_head .container .row .top_right_block img {
     width: 100%;
     transition: 0.5s; }
+
+#myModal .modal-dialog {
+  max-width: 1170px;
+  width: 100%; }
+  @media screen and (max-width: 1100px) {
+    #myModal .modal-dialog {
+      width: 95%; } }
+  #myModal .modal-dialog .modal-content .modal-body {
+    background: var(--modal-body-bg);
+    padding: 0; }
+    #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+      background: url("../images/people_bg.png");
+      background-size: contain;
+      padding: 100px 74px; }
+      @media screen and (max-width: 992px) {
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+          padding: 80px 20px; } }
+      @media screen and (max-width: 767px) {
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+          padding: 30px 20px; } }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+        font: 12px 'MontserratMedium';
+        color: var(--color-text-000);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 600; }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+            text-align: center; } }
+        @media screen and (max-width: 576px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+            margin: 5px 0; } }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+        font: 12px 'MontserratMedium';
+        color: var(--color-text-000);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 900;
+        margin-top: 30px;
+        position: relative; }
+        @media screen and (max-width: 992px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+            margin-top: 15px;
+            margin-bottom: 23px; } }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+            text-align: center; } }
+        @media screen and (max-width: 576px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+            margin: 5px 0; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+          content: "";
+          border-bottom: solid 1px var(--color-text-000);
+          width: 100px;
+          display: block;
+          margin-top: 30px; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+              margin-top: 15px; } }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+              position: absolute;
+              top: 25px;
+              left: 0;
+              right: 0;
+              margin: auto; } }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
+        margin: 35px 0 0; }
+        @media screen and (max-width: 992px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
+            margin-top: 15px; } }
+        @media screen and (max-width: 576px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
+            margin-top: 5px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group label {
+          font: 11px/11px 'MontserratLight';
+          text-transform: uppercase;
+          color: var(--color-text-000);
+          margin-bottom: 10px; }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
+        margin-top: 48px; }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
+            margin-top: 20px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
+          font: 12px 'MontserratMedium';
+          font-weight: 600;
+          text-transform: uppercase;
+          width: 190px;
+          height: 37px;
+          border-radius: 20px;
+          background: var(--color-btn) none;
+          outline: none;
+          border: none; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
+              width: 150px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+          color: var(--color-text-000);
+          font: 10px/35px 'MontserratMedium';
+          letter-spacing: 1.3px;
+          text-transform: uppercase; }
+          @media screen and (max-width: 857px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+              line-height: 15px; } }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+              line-height: 35px; } }
+          @media screen and (max-width: 359px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+              line-height: 15px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a:hover {
+            border-bottom: solid 1px var(--color-text-000); }
+    #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+      padding: 100px 50px;
+      background: var(--color-modal_rt_bg); }
+      @media screen and (max-width: 992px) {
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+          padding: 80px 20px; } }
+      @media screen and (max-width: 767px) {
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+          padding: 30px 20px; } }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
+        font: 12px 'MontserratMedium';
+        color: var(--color-text-000);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 600; }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
+            text-align: center; } }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+        border: none !important;
+        margin-top: 30px; }
+        @media screen and (max-width: 992px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+            margin-top: 15px; } }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+            display: flex;
+            justify-content: space-between; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+          position: relative;
+          margin-right: 20px;
+          width: 135px;
+          border-top: none !important;
+          text-align: center;
+          transition: 0.3s; }
+          @media screen and (max-width: 1100px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+              width: 110px;
+              margin-right: 10px; } }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+              width: 100px;
+              margin: 0; } }
+          @media screen and (max-width: 380px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+              width: 75px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover a {
+            background-color: transparent; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover:after {
+            border-color: var(--color-btn);
+            transition: 0.3s; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:after {
+            content: "";
+            width: 100%;
+            border-bottom: solid 3px #e5e5e5;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            transition: 0.3s; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
+            color: #e5e5e5;
+            padding: 0;
+            font: 12px/35px 'MontserratMedium';
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: none !important;
+            border-radius: 0; }
+            @media screen and (max-width: 767px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
+                font-size: 10px;
+                letter-spacing: 1px; } }
+            @media screen and (max-width: 390px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a .tab_span {
+                display: none; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
+          width: 110px;
+          transition: 0.3s; }
+          @media screen and (max-width: 380px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
+              width: 90px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active:after {
+            display: none; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a {
+            background: var(--color-btn) !important;
+            color: #fff;
+            border: none !important; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a:after {
+              content: "";
+              width: 15px;
+              height: 15px;
+              transform: rotate(45deg);
+              background: var(--color-btn) none;
+              display: block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              margin: auto; }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
+        width: 100%;
+        margin-top: 47px; }
+        @media screen and (max-width: 992px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
+            margin-top: 20px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+          margin: 35px 0 0; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+              margin-top: 15px; } }
+          @media screen and (max-width: 576px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+              margin-top: 10px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group label {
+            font: 11px/11px 'MontserratLight';
+            text-transform: uppercase;
+            color: var(--color-text-000);
+            margin-bottom: 10px;
+            font-weight: 400; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group input {
+            background-color: #f6f6f6; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group select {
+            width: 100%;
+            height: 31px;
+            padding-left: 10px; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .pswrd_danger {
+            background-color: #fbf7f1; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number {
+            position: relative;
+            margin-bottom: 30px; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
+              content: "";
+              width: 200px;
+              height: 50px;
+              position: absolute;
+              right: -250px;
+              bottom: -30px;
+              display: block;
+              background: url("../images/payment.png") no-repeat;
+              background-size: contain; }
+              @media screen and (max-width: 400px) {
+                #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
+                  right: -180px;
+                  width: 150px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .scnd-name {
+          padding-top: 27px; }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .date_yy {
+          padding-top: 27px; }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+          font: 12px 'MontserratMedium';
+          font-weight: 600;
+          text-transform: uppercase;
+          width: 190px;
+          height: 37px;
+          margin-top: 48px;
+          border-radius: 20px;
+          background: var(--color-btn) none;
+          outline: none;
+          border: none; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+              width: 150px; } }
+          @media screen and (max-width: 576px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+              width: 130px;
+              margin: 20px auto; } }
 
 /*# sourceMappingURL=style.css.map */
