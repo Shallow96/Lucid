@@ -54,7 +54,9 @@ a {
   text-shadow: none; }
 
 input {
-  height: 31px !important; }
+  height: 31px !important;
+  animation-name: input_opac;
+  animation-duration: 0.5s; }
   @media screen and (max-width: 576px) {
     input {
       font-size: 12px !important; } }
@@ -124,11 +126,14 @@ input {
           width: 100%;
           text-align: right; } }
       .top_head .navbar .container .navbar-header .navbar-brand:hover {
-        text-shadow: 3px 3px 3px var(--color-blue);
+        color: #FFFFFF;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
         transition: 0.6s; }
   .top_head .navbar .container ul {
     margin-top: 42px;
-    padding: 0; }
+    padding: 0;
+    animation-name: from_top;
+    animation-duration: 5s; }
     @media screen and (max-width: 992px) {
       .top_head .navbar .container ul {
         margin-top: 20px; } }
@@ -185,361 +190,527 @@ input {
         background: transparent;
         transform: none;
         color: #fff; }
-  @media screen and (min-width: 1200px) {
-    .top_head .container .row .top_left_block {
-      margin: 50px 0 100px;
-      padding-right: 80px; } }
-  @media screen and (max-width: 992px) {
-    .top_head .container .row .top_left_block {
-      margin-bottom: 30px; } }
-  .top_head .container .row .top_left_block h4 {
-    font: 14px/14px 'SourceSansProBold';
-    color: var(--color-blue);
-    text-transform: uppercase;
-    margin: 0;
-    transition: 0.5s; }
-    @media screen and (max-width: 992px) {
+  .top_head .container {
+    animation-name: opasity_0_to_1;
+    animation-duration: 4s; }
+    .top_head .container .row {
+      animation-name: from_left;
+      animation-duration: 5s; }
+      @media screen and (min-width: 1200px) {
+        .top_head .container .row .top_left_block {
+          margin: 50px 0 100px;
+          padding-right: 80px; } }
+      @media screen and (max-width: 992px) {
+        .top_head .container .row .top_left_block {
+          margin-bottom: 30px; } }
       .top_head .container .row .top_left_block h4 {
-        font-size: 12px;
-        text-align: center; } }
-  .top_head .container .row .top_left_block h1 {
-    font: 48px/48px 'SourceSansProSemiBold';
-    color: var(--color-text-fff);
-    margin-bottom: 28px;
-    transition: 0.5s; }
-    @media screen and (max-width: 992px) {
+        font: 14px/14px 'SourceSansProBold';
+        color: var(--color-blue);
+        text-transform: uppercase;
+        margin: 0;
+        transition: 0.5s; }
+        @media screen and (max-width: 992px) {
+          .top_head .container .row .top_left_block h4 {
+            font-size: 12px;
+            text-align: center; } }
       .top_head .container .row .top_left_block h1 {
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 20px; } }
-    @media screen and (max-width: 767px) {
-      .top_head .container .row .top_left_block h1 {
-        margin: 10px auto 20px;
-        text-align: center; } }
-    @media screen and (max-width: 576px) {
-      .top_head .container .row .top_left_block h1 {
-        font-size: 27px;
-        line-height: 35px; } }
-  .top_head .container .row .top_left_block p {
-    font: 18px/25px "SourceSansProRegular";
-    color: #999999; }
-    @media screen and (max-width: 992px) {
+        font: 48px/48px 'SourceSansProSemiBold';
+        color: var(--color-text-fff);
+        margin-bottom: 28px;
+        transition: 0.5s; }
+        @media screen and (max-width: 992px) {
+          .top_head .container .row .top_left_block h1 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 20px; } }
+        @media screen and (max-width: 767px) {
+          .top_head .container .row .top_left_block h1 {
+            margin: 10px auto 20px;
+            text-align: center; } }
+        @media screen and (max-width: 576px) {
+          .top_head .container .row .top_left_block h1 {
+            font-size: 27px;
+            line-height: 35px; } }
       .top_head .container .row .top_left_block p {
-        font-size: 16px;
-        line-height: 21px;
-        text-align: justify; } }
-    @media screen and (max-width: 576px) {
-      .top_head .container .row .top_left_block p {
-        font-size: 14px;
-        line-height: 18px; } }
-  .top_head .container .row .top_left_block .links {
-    margin-top: 60px; }
-    @media screen and (max-width: 992px) {
+        font: 18px/25px "SourceSansProRegular";
+        color: #999999; }
+        @media screen and (max-width: 992px) {
+          .top_head .container .row .top_left_block p {
+            font-size: 16px;
+            line-height: 21px;
+            text-align: justify; } }
+        @media screen and (max-width: 576px) {
+          .top_head .container .row .top_left_block p {
+            font-size: 14px;
+            line-height: 18px; } }
       .top_head .container .row .top_left_block .links {
-        margin-top: 20px;
-        text-align: center; } }
-    .top_head .container .row .top_left_block .links a {
-      display: inline-block;
-      font: 14px/48px 'SourceSansProBold';
-      text-align: center;
-      color: var(--color-text-fff);
-      text-transform: uppercase;
-      border: solid 1px #454549;
-      border-radius: 3px;
-      width: 160px;
-      transition: 0.3s; }
-      @media screen and (max-width: 992px) {
+        margin-top: 60px; }
+        @media screen and (max-width: 992px) {
+          .top_head .container .row .top_left_block .links {
+            margin-top: 20px;
+            text-align: center; } }
         .top_head .container .row .top_left_block .links a {
-          width: 120px;
-          height: 35px;
-          line-height: 33px;
-          font-size: 12px; } }
-      .top_head .container .row .top_left_block .links a:last-child {
-        margin-left: 20px; }
-      .top_head .container .row .top_left_block .links a:hover {
-        transition: 0.3s;
-        border: solid 1px transparent;
-        background-color: var(--color-blue); }
-  .top_head .container .row .top_right_block img {
-    width: 100%;
-    transition: 0.5s; }
-
-#myModal .modal-dialog {
-  max-width: 1170px;
-  width: 100%; }
-  @media screen and (max-width: 1100px) {
-    #myModal .modal-dialog {
-      width: 95%; } }
-  #myModal .modal-dialog .modal-content .modal-body {
-    background: var(--modal-body-bg);
-    padding: 0; }
-    #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
-      background: url("../images/people_bg.png");
-      background-size: contain;
-      padding: 100px 74px; }
-      @media screen and (max-width: 992px) {
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
-          padding: 80px 20px; } }
-      @media screen and (max-width: 767px) {
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
-          padding: 30px 20px; } }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
-        font: 12px 'MontserratMedium';
-        color: var(--color-text-000);
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        font-weight: 600; }
-        @media screen and (max-width: 767px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
-            text-align: center; } }
-        @media screen and (max-width: 576px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
-            margin: 5px 0; } }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
-        font: 12px 'MontserratMedium';
-        color: var(--color-text-000);
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        font-weight: 900;
-        margin-top: 30px;
-        position: relative; }
-        @media screen and (max-width: 992px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
-            margin-top: 15px;
-            margin-bottom: 23px; } }
-        @media screen and (max-width: 767px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
-            text-align: center; } }
-        @media screen and (max-width: 576px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
-            margin: 5px 0; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
-          content: "";
-          border-bottom: solid 1px var(--color-text-000);
-          width: 100px;
-          display: block;
-          margin-top: 30px; }
-          @media screen and (max-width: 992px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
-              margin-top: 15px; } }
-          @media screen and (max-width: 767px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
-              position: absolute;
-              top: 25px;
-              left: 0;
-              right: 0;
-              margin: auto; } }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
-        margin: 35px 0 0; }
-        @media screen and (max-width: 992px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
-            margin-top: 15px; } }
-        @media screen and (max-width: 576px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
-            margin-top: 5px; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group label {
-          font: 11px/11px 'MontserratLight';
-          text-transform: uppercase;
-          color: var(--color-text-000);
-          margin-bottom: 10px; }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
-        margin-top: 48px; }
-        @media screen and (max-width: 767px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
-            margin-top: 20px; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
-          font: 12px 'MontserratMedium';
-          font-weight: 600;
-          text-transform: uppercase;
-          width: 190px;
-          height: 37px;
-          border-radius: 20px;
-          background: var(--color-btn) none;
-          outline: none;
-          border: none; }
-          @media screen and (max-width: 992px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
-              width: 150px; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
-          color: var(--color-text-000);
-          font: 10px/35px 'MontserratMedium';
-          letter-spacing: 1.3px;
-          text-transform: uppercase; }
-          @media screen and (max-width: 857px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
-              line-height: 15px; } }
-          @media screen and (max-width: 767px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
-              line-height: 35px; } }
-          @media screen and (max-width: 359px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
-              line-height: 15px; } }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a:hover {
-            border-bottom: solid 1px var(--color-text-000); }
-    #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
-      padding: 100px 50px;
-      background: var(--color-modal_rt_bg); }
-      @media screen and (max-width: 992px) {
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
-          padding: 80px 20px; } }
-      @media screen and (max-width: 767px) {
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
-          padding: 30px 20px; } }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
-        font: 12px 'MontserratMedium';
-        color: var(--color-text-000);
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        font-weight: 600; }
-        @media screen and (max-width: 767px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
-            text-align: center; } }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
-        border: none !important;
-        margin-top: 30px; }
-        @media screen and (max-width: 992px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
-            margin-top: 15px; } }
-        @media screen and (max-width: 767px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
-            display: flex;
-            justify-content: space-between; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
-          position: relative;
-          margin-right: 20px;
-          width: 135px;
-          border-top: none !important;
+          display: inline-block;
+          font: 14px/48px 'SourceSansProBold';
           text-align: center;
+          color: var(--color-text-fff);
+          text-transform: uppercase;
+          border: solid 1px #454549;
+          border-radius: 3px;
+          width: 160px;
           transition: 0.3s; }
-          @media screen and (max-width: 1100px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
-              width: 110px;
-              margin-right: 10px; } }
-          @media screen and (max-width: 767px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
-              width: 100px;
-              margin: 0; } }
-          @media screen and (max-width: 380px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
-              width: 75px; } }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover a {
-            background-color: transparent; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover:after {
-            border-color: var(--color-btn);
-            transition: 0.3s; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:after {
-            content: "";
-            width: 100%;
-            border-bottom: solid 3px #e5e5e5;
-            display: block;
-            position: absolute;
-            bottom: 0;
-            transition: 0.3s; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
-            color: #e5e5e5;
-            padding: 0;
-            font: 12px/35px 'MontserratMedium';
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            border: none !important;
-            border-radius: 0; }
-            @media screen and (max-width: 767px) {
-              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
-                font-size: 10px;
-                letter-spacing: 1px; } }
-            @media screen and (max-width: 390px) {
-              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a .tab_span {
-                display: none; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
-          width: 110px;
-          transition: 0.3s; }
-          @media screen and (max-width: 380px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
-              width: 90px; } }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active:after {
-            display: none; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a {
-            background: var(--color-btn) !important;
-            color: #fff;
-            border: none !important; }
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a:after {
-              content: "";
-              width: 15px;
-              height: 15px;
-              transform: rotate(45deg);
-              background: var(--color-btn) none;
-              display: block;
-              position: absolute;
-              left: 0;
-              right: 0;
-              bottom: -5px;
-              margin: auto; }
-      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
+          @media screen and (max-width: 992px) {
+            .top_head .container .row .top_left_block .links a {
+              width: 120px;
+              height: 35px;
+              line-height: 33px;
+              font-size: 12px; } }
+          .top_head .container .row .top_left_block .links a:last-child {
+            margin-left: 20px; }
+          .top_head .container .row .top_left_block .links a:hover {
+            transition: 0.3s;
+            border: solid 1px transparent;
+            background-color: var(--color-blue); }
+      .top_head .container .row .top_right_block img {
         width: 100%;
-        margin-top: 47px; }
+        transition: 0.5s; }
+
+#myModal {
+  animation-name: manifestation;
+  animation-duration: 1s; }
+  #myModal .modal-dialog {
+    max-width: 1170px;
+    width: 100%;
+    overflow: hidden !important; }
+    @media screen and (max-width: 1100px) {
+      #myModal .modal-dialog {
+        width: 95%; } }
+    #myModal .modal-dialog .modal-content .modal-body {
+      background: var(--modal-body-bg);
+      padding: 0; }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+        background: url("../images/people_bg.png");
+        background-size: contain;
+        padding: 100px 74px; }
         @media screen and (max-width: 992px) {
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
-            margin-top: 20px; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+            padding: 80px 20px; } }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left {
+            padding: 30px 20px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+          font: 12px 'MontserratMedium';
+          color: var(--color-text-000);
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          font-weight: 600; }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h5 {
+              margin: 5px 0; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+          font: 12px 'MontserratMedium';
+          color: var(--color-text-000);
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          font-weight: 900;
+          margin-top: 30px;
+          position: relative; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+              margin-top: 15px;
+              margin-bottom: 23px; } }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+              text-align: center; } }
+          @media screen and (max-width: 576px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6 {
+              margin: 5px 0; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+            content: "";
+            border-bottom: solid 1px var(--color-text-000);
+            width: 100px;
+            display: block;
+            margin-top: 30px; }
+            @media screen and (max-width: 992px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+                margin-top: 15px; } }
+            @media screen and (max-width: 767px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form h6:after {
+                position: absolute;
+                top: 25px;
+                left: 0;
+                right: 0;
+                margin: auto; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
           margin: 35px 0 0; }
           @media screen and (max-width: 992px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
               margin-top: 15px; } }
           @media screen and (max-width: 576px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
-              margin-top: 10px; } }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group label {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group {
+              margin-top: 5px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .form-group label {
             font: 11px/11px 'MontserratLight';
             text-transform: uppercase;
             color: var(--color-text-000);
-            margin-bottom: 10px;
-            font-weight: 400; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group input {
-            background-color: #f6f6f6; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group select {
-            width: 100%;
-            height: 31px;
-            padding-left: 10px; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .pswrd_danger {
-            background-color: #fbf7f1; }
-          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number {
-            position: relative;
-            margin-bottom: 30px; }
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
-              content: "";
-              width: 200px;
-              height: 50px;
-              position: absolute;
-              right: -250px;
-              bottom: -30px;
-              display: block;
-              background: url("../images/payment.png") no-repeat;
-              background-size: contain; }
-              @media screen and (max-width: 400px) {
-                #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
-                  right: -180px;
-                  width: 150px; } }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .scnd-name {
-          padding-top: 27px; }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .date_yy {
-          padding-top: 27px; }
-        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+            margin-bottom: 10px; }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
+          margin-top: 48px; }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row {
+              margin-top: 20px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
+            font: 12px 'MontserratMedium';
+            font-weight: 600;
+            text-transform: uppercase;
+            width: 190px;
+            height: 37px;
+            border-radius: 20px;
+            background: var(--color-btn) none;
+            outline: none;
+            border: none; }
+            @media screen and (max-width: 992px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row button {
+                width: 150px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+            color: var(--color-text-000);
+            font: 10px/35px 'MontserratMedium';
+            letter-spacing: 1.3px;
+            text-transform: uppercase; }
+            @media screen and (max-width: 857px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+                line-height: 15px; } }
+            @media screen and (max-width: 767px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+                line-height: 35px; } }
+            @media screen and (max-width: 359px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a {
+                line-height: 15px; } }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_left form .row a:hover {
+              border-bottom: solid 1px var(--color-text-000); }
+      #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+        padding: 100px 50px;
+        background: var(--color-modal_rt_bg); }
+        @media screen and (max-width: 992px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+            padding: 80px 20px; } }
+        @media screen and (max-width: 767px) {
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right {
+            padding: 30px 20px; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
           font: 12px 'MontserratMedium';
-          font-weight: 600;
+          color: var(--color-text-000);
           text-transform: uppercase;
-          width: 190px;
-          height: 37px;
-          margin-top: 48px;
-          border-radius: 20px;
-          background: var(--color-btn) none;
-          outline: none;
-          border: none; }
+          letter-spacing: 1.5px;
+          font-weight: 600; }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right h5 {
+              text-align: center; } }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+          border: none !important;
+          margin-top: 30px; }
           @media screen and (max-width: 992px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
-              width: 150px; } }
-          @media screen and (max-width: 576px) {
-            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
-              width: 130px;
-              margin: 20px auto; } }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+              margin-top: 15px; } }
+          @media screen and (max-width: 767px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul {
+              display: flex;
+              justify-content: space-between; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+            position: relative;
+            margin-right: 20px;
+            width: 135px;
+            border-top: none !important;
+            text-align: center;
+            transition: 0.3s; }
+            @media screen and (max-width: 1100px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+                width: 110px;
+                margin-right: 10px; } }
+            @media screen and (max-width: 767px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+                width: 100px;
+                margin: 0; } }
+            @media screen and (max-width: 380px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li {
+                width: 75px; } }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover a {
+              background-color: transparent; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:hover:after {
+              border-color: var(--color-btn);
+              transition: 0.3s; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li:after {
+              content: "";
+              width: 100%;
+              border-bottom: solid 3px #e5e5e5;
+              display: block;
+              position: absolute;
+              bottom: 0;
+              transition: 0.3s; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
+              color: #e5e5e5;
+              padding: 0;
+              font: 12px/35px 'MontserratMedium';
+              letter-spacing: 1.5px;
+              text-transform: uppercase;
+              border: none !important;
+              border-radius: 0; }
+              @media screen and (max-width: 767px) {
+                #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a {
+                  font-size: 10px;
+                  letter-spacing: 1px; } }
+              @media screen and (max-width: 390px) {
+                #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul li a .tab_span {
+                  display: none; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
+            width: 110px;
+            transition: 0.3s; }
+            @media screen and (max-width: 380px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active {
+                width: 90px; } }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active:after {
+              display: none; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a {
+              background: var(--color-btn) !important;
+              color: #fff;
+              border: none !important; }
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right ul .active a:after {
+                content: "";
+                width: 15px;
+                height: 15px;
+                transform: rotate(45deg);
+                background: var(--color-btn) none;
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -5px;
+                margin: auto; }
+        #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
+          width: 100%;
+          margin-top: 47px; }
+          @media screen and (max-width: 992px) {
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form {
+              margin-top: 20px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+            margin: 35px 0 0; }
+            @media screen and (max-width: 992px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+                margin-top: 15px; } }
+            @media screen and (max-width: 576px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group {
+                margin-top: 10px; } }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group label {
+              font: 11px/11px 'MontserratLight';
+              text-transform: uppercase;
+              color: var(--color-text-000);
+              margin-bottom: 10px;
+              font-weight: 400; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group input {
+              background-color: #f6f6f6; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group select {
+              width: 100%;
+              height: 31px;
+              padding-left: 10px; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .pswrd_danger {
+              background-color: #fbf7f1; }
+            #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number {
+              position: relative;
+              margin-bottom: 30px; }
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
+                content: "";
+                width: 200px;
+                height: 50px;
+                position: absolute;
+                right: -250px;
+                bottom: -30px;
+                display: block;
+                background: url("../images/payment.png") no-repeat;
+                background-size: contain; }
+                @media screen and (max-width: 400px) {
+                  #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .form-group .credit_number:after {
+                    right: -180px;
+                    width: 150px; } }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .scnd-name {
+            padding-top: 27px; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form .date_yy {
+            padding-top: 27px; }
+          #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+            font: 12px 'MontserratMedium';
+            font-weight: 600;
+            text-transform: uppercase;
+            width: 190px;
+            height: 37px;
+            margin-top: 48px;
+            border-radius: 20px;
+            background: var(--color-btn) none;
+            outline: none;
+            border: none; }
+            @media screen and (max-width: 992px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+                width: 150px; } }
+            @media screen and (max-width: 576px) {
+              #myModal .modal-dialog .modal-content .modal-body .container .row .modal_right form button {
+                width: 130px;
+                margin: 20px auto; } }
+
+@keyframes from_top {
+  0% {
+    margin-top: -1000px; }
+  100% {
+    margin-top: 42px; } }
+@media screen and (max-width: 992px) {
+  @keyframes from_top {
+    0% {
+      margin-top: -1000px; }
+    100% {
+      margin-top: 20px; } } }
+@keyframes from_left {
+  0% {
+    margin-left: -4000px; }
+  50% {
+    margin-left: -4000px; }
+  100% {
+    margin-left: -15px; } }
+@keyframes opasity_0_to_1 {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes manifestation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes input_opac {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.preload {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  background: url("../images/preload_bg.jpg") center;
+  background-size: cover;
+  animation-name: preload;
+  animation-duration: 3s; }
+
+@keyframes preload {
+  0% {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 50px 10px #008ed6; }
+  15% {
+    width: 200px;
+    height: 200px;
+    right: 0; }
+  40% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    box-shadow: 0 0 50px 10px #008ed6; }
+  80% {
+    opacity: 1; }
+  99.9% {
+    width: 100%;
+    height: 100%; }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0; } }
+@media screen and (max-width: 576px) {
+  @keyframes preload {
+    0% {
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      margin: auto;
+      box-shadow: 0 0 50px 10px #008ed6; }
+    15% {
+      width: 100px;
+      height: 100px;
+      right: 0; }
+    40% {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      box-shadow: 0 0 50px 10px #008ed6; }
+    80% {
+      opacity: 1; }
+    99.9% {
+      width: 100%;
+      height: 100%; }
+    100% {
+      width: 100%;
+      height: 100%;
+      opacity: 0; } } }
+.preload_text {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #16151b, 0 -10px 20px #1c3469, 0 -18px 40px #008ed6, -4px -7px 17px #e602ff;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  animation-name: preload_text;
+  animation-duration: 3s; }
+  .preload_text h2 {
+    font-size: 200px; }
+    @media screen and (max-width: 1200px) {
+      .preload_text h2 {
+        font-size: 150px; } }
+    @media screen and (max-width: 992px) {
+      .preload_text h2 {
+        font-size: 100px; } }
+    @media screen and (max-width: 767px) {
+      .preload_text h2 {
+        font-size: 80px; } }
+    @media screen and (max-width: 576px) {
+      .preload_text h2 {
+        font-size: 60px; } }
+    @media screen and (max-width: 400px) {
+      .preload_text h2 {
+        font-size: 45px; } }
+
+@keyframes preload_text {
+  0% {
+    z-index: 3;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    z-index: 3;
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */
